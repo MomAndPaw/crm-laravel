@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/leads/store',[LeadController::class,'store']);
+Route::get('/leads/insert',[LeadController::class,'store']);
 Route::get('/leads',[LeadController::class,'index']);
